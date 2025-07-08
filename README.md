@@ -161,3 +161,121 @@ git commit -m "new changes added
 ```
 git push
 ```
+
+Here's your complete guide with `git log` commands written in the same clean format as your `## Edit Config` block 👇
+
+---
+
+## 🔥 Most Useful `git log` Commands
+
+### ✅ Short Summary (oneline)
+
+```
+git log --oneline
+```
+
+➡ Har commit ko ek line me dikhaata hai
+
+---
+
+### 📈 Graph View
+
+```
+git log --oneline --graph --all --decorate
+```
+
+➡ Branches aur merges ka visual tree dikhata hai
+
+---
+
+### 🧑‍💻 Filter by Author
+
+```
+git log --author="Naveen"
+```
+
+➡ Sirf un commits ko dikhaata hai jo Naveen ne kiye
+
+---
+
+### 🔎 Search by Commit Message
+
+```
+git log --grep="bug fix"
+```
+
+➡ Sirf wo commits dikhata hai jinke message me "bug fix" likha ho
+
+---
+
+### 📅 Filter by Date
+
+```
+git log --since="2025-07-01"
+git log --until="2025-07-08"
+git log --since="1 week ago"
+```
+
+➡ Specific date range me commit dikhata hai
+
+---
+
+### 📂 Show log of a specific file
+
+```
+git log naveengitBatch.txt
+```
+
+➡ Sirf us file ke commits dikhata hai jisme change hua
+
+---
+
+### 🧾 Show patch (code diff in log)
+
+```
+git log -p
+```
+
+➡ Har commit ke saath kya code change hua, wo dikhata hai
+
+---
+
+### 🔢 Limit number of commits
+
+```
+git log -n 5
+```
+
+➡ Sirf last 5 commits dikhata hai
+
+---
+
+### 🎨 Custom Format Output
+
+```
+git log --pretty=format:"%h - %an, %ar : %s"
+```
+
+➡ Apne format me log print karo
+`%h`: short hash, `%an`: author name, `%ar`: relative date, `%s`: message
+
+**Example Output:**
+
+```
+8d632f7 - Naveen Kumar, 2 hours ago : first commit
+```
+
+---
+
+### 🎯 Bonus Tip: Show Changed Files Only
+
+```
+git log --name-only
+```
+
+➡ Har commit ke baad sirf file names dikhata hai jo change hui
+
+---
+
+Would you like this as a downloadable **PDF cheat sheet** or want more `git` commands like `git diff`, `git reset`, etc.?
+
