@@ -140,7 +140,21 @@ git add sum.java
 
 ## Commit Changes
 ```
-git commit -m "new changes added"
+git commit -m "new changes added
+
+```
+
+## Git restore
+
+```
+
+| Situation                             | Command                                     | Result                                          |
+| ------------------------------------- | ------------------------------------------- | ----------------------------------------------- |
+| Uncommitted changes hataane hain      | `git restore file.txt`                      | File waapas last commit jaisi ho jaayegi        |
+| Staged file ko unstage karna          | `git restore --staged file.txt`             | `git add` ka effect hata dega                   |
+| Dono hataane hain                     | `git restore --staged --worktree file.txt`  | File clean ho jaayegi                           |
+| File kisi purane commit jaisi chahiye | `git restore --source=<commit-id> file.txt` | File us commit ke content se replace ho jaayegi |
+
 ```
 
 ## Push Changes to Remote
